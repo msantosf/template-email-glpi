@@ -1,0 +1,78 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style type="text/css">
+	
+  *, a {
+    font-family: Arial, sans-serif; 
+    text-decoration:none;
+  }
+
+  .container {
+    width: 720px;
+    margin: 0 auto;
+    border: solid;
+  }
+
+  .cabecalho {
+    display: grid;
+    grid-template: auto / auto auto auto;
+
+    align-items: center;
+    text-align: center;
+    border-bottom: double;
+  }
+
+  .cabecalho img {
+    width: 100%;
+  }
+
+  .solicitacao, .solucao {
+    text-align: center;
+  }
+
+  .solicitacao {
+    margin-bottom: 100px;
+  }
+
+  .solicitacao h2 span {
+    color: red;
+  }
+
+  .solucao h2 {
+    color: blue
+  }
+
+</style>
+
+<div class="container">
+  <div class="content">
+    
+    <header class="cabecalho">
+      <img src="Logo Bithelp.png" width="10%" alt="logomarca" alt="">
+      <h1>Nº do ticket: <span>11523 <!-- ##ticket.id## --></span></h1>
+      <p>Status do ticket: <span>Aguardando atendimento <!-- ##ticket.status## --></span></p>
+    </header>
+
+    <section class="solicitacao">
+      <h2>Título: <span>Lorem ipsum dolor <!-- ##ticket.title## --></span></h2>
+      <p> Mais detalhes: <span>Lorem ipsum dolor sit amet, consectetur 
+        adipiscing elit. Aliquam odio lectus, gravida quis laoreet a, 
+        efficitur a magna. Nam placerat ac tortor sed vulputate. <!-- ##ticket.content## --> </span>
+      </p>
+    </section>
+
+    <!-- ##IFticket.storestatus=5## -->
+    <section class="solucao">
+      <h2>Chamado encerrado</h2>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur 
+        adipiscing elit. Aliquam odio lectus, gravida quis laoreet a, 
+        efficitur a magna. Nam placerat ac tortor sed vulputate.
+        <!-- ##ticket.solution.description## -->
+      </p>
+    </section>
+    <!-- ##ENDIFticket.storestatus## -->
+
+  </div>
+</div>

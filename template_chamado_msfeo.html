@@ -1,0 +1,41 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style type="text/css">
+	*, a {font-family: Arial, sans-serif; text-decoration:none;}
+  div [class=container]{width: 720px;margin: 0 auto;border: solid;}
+  header [class=cabecalho]{display: grid;grid-template: auto / auto auto auto;align-items: center;text-align: center;border-bottom: double;}
+  header [class=cabecalho] img {width: 100%;}
+  section [class=solicitacao]{text-align: center;margin-bottom: 100px;}
+  section [class=solicitacao] h2 span {color: red;}
+  section [class=solucao]{text-align: center;}
+  section [class=solucao] h2{color: blue}
+</style>
+
+<div class="container">
+  <div class="content">
+    
+    <header class="cabecalho">
+      <!-- <img src="Logo Bithelp.png" width="10%" alt="logomarca" alt=""> -->
+      <img src="http://192.168.56.103/Logo Bithelp.png" height="68" width="218" alt="logomarca" alt="">
+      <h1>Nº do ticket: <span>##ticket.id##</span></h1>
+      <p>Status do ticket: <span>##ticket.status##</span></p>
+    </header>
+
+    <section class="solicitacao">
+      <h2>Título: <span>##ticket.title##</span></h2>
+      <p> Mais detalhes: <span>##ticket.content## </span>
+      </p>
+    </section>
+
+    ##IFticket.storestatus=5##
+    <section class="solucao">
+      <h2>Chamado encerrado</h2>
+      
+      <p>
+        ##ticket.solution.description##
+      </p>
+    </section>
+    ##ENDIFticket.storestatus##
+  </div>
+</div>
